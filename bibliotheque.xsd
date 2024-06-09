@@ -1,0 +1,56 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Définition de l'élément principal 'bibliotheque' -->
+    <xsd:element name="bibliotheque">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Chaque élément 'livre' représente un livre dans la bibliothèque -->
+                <xsd:element name="livre" type="livreType" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <!-- Définition du type complexe 'livreType' -->
+    <xsd:complexType name="livreType">
+        <xsd:sequence>
+            <!-- URL de l'image de couverture du livre -->
+            <xsd:element name="urlImage" type="xsd:anyURI"/>
+            <xsd:element name="nom" type="xsd:string"/>
+            <xsd:element name="auteur" type="xsd:string"/>
+            <xsd:element name="synopsis" type="xsd:string"/>
+            <!-- Genre du livre (type personnalisé) -->
+            <xsd:element name="genre" type="genreType"/>
+            <xsd:element name="nbpage" type="xsd:positiveInteger"/>
+            <!-- Notation du livre (type personnalisé) -->
+            <xsd:element name="notation" type="notationType"/>
+            <!-- Date de publication du livre -->
+            <xsd:element name="datePublication" type="xsd:date"/>
+        </xsd:sequence>
+        <!-- Attribut obligatoire pour l'ID du livre -->
+        <xsd:attribute name="idLivre" type="xsd:positiveInteger" use="required"/>
+    </xsd:complexType>
+    
+    <!-- Définition d'un type simple personnalisé pour la notation -->
+    <xsd:simpleType name="notationType">
+        <xsd:restriction base="xsd:int">
+            <!-- Valeur minimale de la notation -->
+            <xsd:minInclusive value="0"/>
+            <!-- Valeur maximale de la notation -->
+            <xsd:maxInclusive value="6"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <!-- Définition d'un type simple personnalisé pour le genre -->
+    <xsd:simpleType name="genreType">
+        <xsd:restriction base="xsd:string">
+            <!-- Valeurs possibles pour le genre d'un livre -->
+            <xsd:enumeration value="Fiction"/>
+            <xsd:enumeration value="Non-Fiction"/>
+            <xsd:enumeration value="Science-Fiction"/>
+            <xsd:enumeration value="Fantasy"/>
+            <xsd:enumeration value="Biography"/>
+            <xsd:enumeration value="Mystery"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

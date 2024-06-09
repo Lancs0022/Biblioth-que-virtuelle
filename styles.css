@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.book, .user {
+    display: flex;
+    align-items: flex-start;
+    background-color: #e0e0e0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.book img, .user img {
+    border-radius: 10px;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.book-info, .user-info {
+    max-width: 600px;
+}
+
+.book-info h2, .user-info h2 {
+    margin: 0;
+}
+
+.book-info .genre, .user-info .pseudo {
+    font-weight: bold;
+}
+
+.book-info .notation, .user-info .commentaire {
+    font-style: italic;
+}
+
+.book-info .synopsis, .user-info .livres-lus {
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

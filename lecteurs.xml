@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utilisateurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="lecteurs.xsd">
+    <lecteur idUser="1">
+        <pdp>assets\pdp\Annotation1.png</pdp>
+        <pseudo>Lancs</pseudo>
+        <password>mdp1</password>
+        <lus>
+            <livre>
+                <idLivre>1</idLivre>
+                <nomLivre>Le Petit Prince</nomLivre>
+                <commentaire>Un classique intemporel !</commentaire>
+            </livre>
+            <livre>
+                <idLivre>2</idLivre>
+                <nomLivre>Harry Potter à l'école des sorciers</nomLivre>
+                <commentaire>Une histoire magique et captivante.</commentaire>
+            </livre>
+        </lus>
+        <dateInscription>2024-01-15</dateInscription>
+    </lecteur>
+    <lecteur idUser="2">
+        <pdp>assets\pdp\Annotation2.png</pdp>
+        <pseudo>Arson</pseudo>
+        <password>mdp2</password>
+        <lus>
+            <livre>
+                <idLivre>3</idLivre>
+                <nomLivre>1984</nomLivre>
+                <commentaire>Un livre troublant sur la surveillance...</commentaire>
+            </livre>
+            <livre>
+                <idLivre>4</idLivre>
+                <nomLivre>Crime et Châtiment</nomLivre>
+                <commentaire>Une exploration fascinante de la culpabilité...</commentaire>
+            </livre>
+        </lus>
+        <dateInscription>2023-10-01</dateInscription>
+    </lecteur>
+    <lecteur idUser="3">
+        <pdp>assets\pdp\Annotation3.png</pdp>
+        <pseudo>Rina</pseudo>
+        <password>mdp3</password>
+        <lus>
+            <livre>
+                <idLivre>1</idLivre>
+                <nomLivre>Le Petit Prince</nomLivre>
+                <commentaire>Un conte plein de sagesse et de poésie...</commentaire>
+            </livre>
+            <livre>
+                <idLivre>2</idLivre>
+                <nomLivre>Harry Potter à l'école des sorciers</nomLivre>
+                <commentaire>Une immersion dans un monde magique et captivant...</commentaire>
+            </livre>
+        </lus>
+        <dateInscription>2024-01-05</dateInscription>
+    </lecteur>
+    <lecteur idUser="4">
+        <pdp>assets\pdp\Annotation4.png</pdp>
+        <pseudo>Sammy</pseudo>
+        <password>mdp4</password>
+        <lus>
+            <livre>
+                <idLivre>1</idLivre>
+                <nomLivre>Le Petit Prince</nomLivre>
+                <commentaire>Une histoire touchante qui révèle la beauté...</commentaire>
+            </livre>
+            <livre>
+                <idLivre>3</idLivre>
+                <nomLivre>1984</nomLivre>
+                <commentaire>Un livre qui fait réfléchir sur le contrôle...</commentaire>
+            </livre>
+        </lus>
+        <dateInscription>2023-12-20</dateInscription>
+    </lecteur>
+</utilisateurs>

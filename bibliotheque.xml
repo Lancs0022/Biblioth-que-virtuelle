@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bibliotheque.xsd">
+    <livre idLivre="1">
+        <urlImage>assets\livres\Le_Petit_Prince.jpg</urlImage>
+        <nom>Le Petit Prince</nom>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <synopsis>Le Petit Prince est un conte philosophique...</synopsis>
+        <genre>Fiction</genre>
+        <nbpage>96</nbpage>
+        <notation>5</notation>
+        <datePublication>1943-04-06</datePublication>
+    </livre>
+    <livre idLivre="2">
+        <urlImage>assets\livres\Harry_Potter_à_l'école_des sorciers.jpg</urlImage>
+        <nom>Harry Potter à l'école des sorciers</nom>
+        <auteur>J.K. Rowling</auteur>
+        <synopsis>Harry Potter découvre sa véritable identité...</synopsis>
+        <genre>Fantasy</genre>
+        <nbpage>336</nbpage>
+        <notation>6</notation>
+        <datePublication>1997-06-26</datePublication>
+    </livre>
+    <livre idLivre="3">
+        <urlImage>assets\livres\George_Orwell.jpg</urlImage>
+        <nom>1984</nom>
+        <auteur>George Orwell</auteur>
+        <synopsis>1984 est un roman dystopique où...</synopsis>
+        <genre>Science-Fiction</genre>
+        <nbpage>328</nbpage>
+        <notation>4</notation>
+        <datePublication>1949-06-08</datePublication>
+    </livre>
+    <livre idLivre="4">
+        <urlImage>assets\livres\Crime_et_Châtiment2.jpg</urlImage>
+        <nom>Crime et Châtiment</nom>
+        <auteur>Fiodor Dostoïevski</auteur>
+        <synopsis>Crime et Châtiment suit les troubles psychologiques...</synopsis>
+        <genre>Fiction</genre>
+        <nbpage>608</nbpage>
+        <notation>4</notation>
+        <datePublication>1866-11-14</datePublication>
+    </livre>
+</bibliotheque>
